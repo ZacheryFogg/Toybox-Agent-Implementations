@@ -16,17 +16,6 @@ from stable_baselines3.common.callbacks import BaseCallback
 from stable_baselines3.common.atari_wrappers import AtariWrapper
 from stable_baselines3 import DQN
 
-# env_id = 'PacmanToyboxNoFrameskip-v4'
-# timesteps = 100
-
-# env = gym.make(env_id, alpha=False, grayscale=False)
-# env = AtariWrapper(env)
-
-# agent = PPO('CnnPolicy', env)
-
-# start = time.time()
-# agent.learn(timesteps)
-# print("Total time elapsed for {} timesteps: {}".format(timesteps, time.time() - start))
 
 class SaveOnBestTrainingRewardCallback(BaseCallback):
     """
